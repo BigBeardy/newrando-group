@@ -1,0 +1,53 @@
+body{
+
+	/*background-color: lightblue;*/
+	color: black;
+	background-color:#1ad1ff
+	;
+	z-index: 1;
+	font-size: 40px;
+	font: 'Times New Roman';
+	 color:white;
+
+}
+#ourfirstdiv {
+	position:fixed;
+	height: 175px;
+	width: 1325px;
+    background-color: black;
+    border: red solid 7px;
+}
+/* link is <li><a href="http://www.google.com">google</a></li>*/
+#ourseconddiv {
+	position:fixed;
+	height: 150px;
+	width:1300px;
+	background-color: #000066;
+	border: yellow dotted 10px;
+}
+
+#ourlist li{
+display: inline;
+padding:  5px;
+font-color:yellow;
+padding-left: 100px;
+}
+a:link {
+    color:  yellow;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:hover {
+	color: red;
+	background-color: transparent;
+	text-decoration: none;
+	display: inline-block;
+	
+}
+#pic img {
+	position: relative;
+	width: 20%
+	margin-bottom: 60px;
+}
+
+

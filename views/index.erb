@@ -1,0 +1,102 @@
+<!DOCtype html>
+
+<header>
+<h4>Are you ready to get coding?</h4>
+</header>
+<p>How many bright minds are in class today?</p>
+<form id="myForm" method="post" action="names">
+    Students to pair: <br />
+    <input type="text" name="boxes[]" id="boxes">
+    <input type="button" id="addPet" value="Add Student" onclick="createInputBoxes()"/>
+    <input type="submit">
+    <br/>
+</form>
+
+<!-- <form method = "post" action = "names" id = "text_box">
+    <input type ="number" min = 2 autofocus = "autofocus" id ="myInput" oninput = "myFunction()" >
+    <p id = "demo"></p>
+    <br>
+    <br>
+    <input type = "submit">
+</form></center> -->
+<script>
+
+function createInputBoxes(){
+    var createInput = document.createElement("input");
+    createInput.type = "text";
+    createInput.name = "boxes[]";
+    createInput.id = "boxes";
+    var br = document.createElement("br");
+    myForm.appendChild(createInput);
+    myForm.appendChild(br);
+}
+// document.getElementById("addPet").onclick = function() {
+//     var form = document.getElementById("myForm");
+//     var input = document.createElement("input");
+//     input.type = "text";
+//     var br = document.createElement("br");
+//     form.appendChild(input);
+// //     form.appendChild(br);
+// }
+
+    // function myFunction() {
+    //     var x = 1
+    //     // document.getElementById("myInput").value;
+    //     var y = "";
+    //     for (i = 0; i < x; i++) 
+    //     document.getElementById("demo").innerHTML = "Enter their names in the boxes below:<br>";
+    //         for (var i = 1; i <= x; i++){
+    //         var input = document.createElement("input");
+    //         input.type = "text";
+    //         input.name = "text" + i;
+    //         document.getElementById("demo").appendChild(input).value;
+    //         }
+    // }
+</script>
+
+
+<!-- <!DOCtype html>
+<link rel = "stylesheet" href = "css/new_style.css">
+<header>
+<h4>Are you ready to get coding?</h4>
+</header>
+<p>How many bright minds are in class today?</p>
+<!-- <script>
+var peoplemath = document.getElementById("addpeople").onclick = function() {
+    var form = document.getElementById("myForm");
+    var input = document.createElement("input");
+    input.type = "text";
+    var br = document.createElement("br");
+    form.appendChild(input);
+    form.appendChild(br);
+}
+</script> -->
+
+<!-- <form method = "post" action = "names" id = "text_box">
+    <!-- <input type ="number" min = 2 autofocus = "autofocus" id ="myInput" oninput = "myFunction()" > -->
+    <!-- <form name="myForm" id="myForm" onsubmit="return validateForm()">
+    people: <br />
+    <input type="text" id="people" />
+    <input type="button" id="addpeople" value="add_people" />
+    <br/>
+</form>
+    <br>
+    <input type = "submit">
+</form></center> -->
+
+
+<!-- <script>
+    function myFunction() {
+        var x = 1
+        // document.getElementById("myInput").value;
+        document.getElementById('demo').innerHTML= "enter names below <br>"
+        for (var i = 1; i < x; i++) 
+        document.getElementById("demo").innerHTML = "Enter their names in the boxes below:<br>";
+            for (var i = 0; i <= x; i+1){
+            var input = document.createElement("input");
+            input.type = "text";
+            input.name = "text" + i;
+            document.getElementById("demo").appendChild(input).value;
+            }
+    }
+</script>   -->
