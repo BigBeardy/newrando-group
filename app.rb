@@ -15,6 +15,6 @@ post '/names' do
 	puts "MADE IT TO POST NAMES"
 	boxes = params[:boxes]
 	splitting = pair(boxes)
-	# check = createcheckboxes(splitting)
+	
 erb :names, :locals=>{:boxes=>boxes, :splitting=>splitting}
 end 
